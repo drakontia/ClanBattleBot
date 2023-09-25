@@ -30,10 +30,10 @@ export async function regist(
   }
 
   // チェック
-  const err = await validate(user, event, attackCount);
-  if (err instanceof Error) {
-    return err;
-  }
+  // const err = await validate(user, event, attackCount);
+  // if (err instanceof Error) {
+  //   return err;
+  // }
   // DBに保存
   const declaration = new Declaration(
     user.clanId,
